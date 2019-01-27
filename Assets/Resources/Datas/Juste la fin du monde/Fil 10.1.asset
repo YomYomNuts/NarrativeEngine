@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519a2596fec834b5ea05ded6f9fd2dce, type: 3}
+  m_Name: Fil 10.1
+  m_EditorClassIdentifier: 
+  _Descriptors:
+  - {fileID: 114781667600095876}
+  _Conditions:
+  - {fileID: 114555481015687518}
+  _Show: 0
+  m_ShowDescriptors:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
+  m_ShowConditions:
+    m_Target: 1
+    speed: 2
+    m_Value: 1
+--- !u!114 &114555481015687518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef903e4e18724635966cd4de5427d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Name: Joystick bas
+  _NextPage: {fileID: 11400000, guid: 6cc002c1da9c14c518174f57b7d55936, type: 2}
+  _Input: 274
+--- !u!114 &114781667600095876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c758c60455df846c3b534fb919fce3ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Text: "Je rejoins Antoine en bas dans le garage. Il est nerveux, range des cartons,
+    marmonne dans sa barbe. On peut distinguer quelques mots en allant dans sa direction.
+    \"Pas possible\" \"Il aurait pu\" \"Longtemps\" \"se foutre la gueule du monde\".
+    Je toque au mur pour annoncer ma pr\xE9sence.\\n \"Ah te voil\xE0 ! \xC0 vrai
+    dire, je t'ai tout dit mais tu peux m'aider \xE0 ranger.\\n - Tr\xE8s bien que
+    dois-je faire ?\\n - Prends le carton \xE0 tes pieds. "
+  _TextColor: {r: 1, g: 1, b: 1, a: 1}

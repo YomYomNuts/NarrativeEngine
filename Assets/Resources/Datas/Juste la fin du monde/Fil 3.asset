@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519a2596fec834b5ea05ded6f9fd2dce, type: 3}
+  m_Name: Fil 3
+  m_EditorClassIdentifier: 
+  _Descriptors:
+  - {fileID: 114733421486131990}
+  _Conditions:
+  - {fileID: 114040922472080734}
+  _Show: 0
+  m_ShowDescriptors:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
+  m_ShowConditions:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
+--- !u!114 &114040922472080734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef903e4e18724635966cd4de5427d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Name: "Pr\xE9sentation SUZANNE"
+  _NextPage: {fileID: 11400000, guid: a34efebb9c1bc4160a8dc410fd4e7f35, type: 2}
+  _Input: 274
+--- !u!114 &114733421486131990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c758c60455df846c3b534fb919fce3ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Text: "Carole annonce mon arriv\xE9e aux autres.\\n \\n Ils sont l\xE0, autour
+    de la table de la cuisine, en plein petit-d\xE9jeuner. En me voyant, ils prennent
+    tous une t\xEAte de merlan frit. Ils d\xE9chiffrent un visage qu'ils n'ont pas
+    vu depuis 12 ans. Ils avaient jusqu'ici encore l'image d'un jeune adulte de 22
+    ans. En voyant l'homme qui se tient devant eux, ils rajoutent \xE0 cet adulte,
+    des traits tir\xE9s, une barbe de 3 jours, des cernes et des joues creuses.\\n
+    \\n Suzanne me saute dans les bras. "
+  _TextColor: {r: 1, g: 1, b: 1, a: 1}

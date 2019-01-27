@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0076b3bfe3e634319b70a670faca3c94, type: 3}
+  m_Name: TagsManager
+  m_EditorClassIdentifier: 
+  _Tags:
+  - {fileID: 114071358924604472}
+  - {fileID: 114663613685761198}
+  - {fileID: 114264009176729256}
+  m_ShowTags:
+    m_Target: 1
+    speed: 2
+    m_Value: 1
+--- !u!114 &114071358924604472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f36571aaba975441390df3107d014ac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Name: Test
+  _Value: 0
+  _InitialValue: 0
+--- !u!114 &114264009176729256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7d97a0e101eb4b1d9a016081f3eb04a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Name: Boule
+  _Value: 0
+  _InitialValue: 0
+--- !u!114 &114663613685761198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f36571aaba975441390df3107d014ac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Name: Prout
+  _Value: 0
+  _InitialValue: 0

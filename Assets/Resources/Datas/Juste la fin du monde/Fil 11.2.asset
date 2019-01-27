@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519a2596fec834b5ea05ded6f9fd2dce, type: 3}
+  m_Name: Fil 11.2
+  m_EditorClassIdentifier: 
+  _Descriptors:
+  - {fileID: 114473974501317634}
+  _Conditions:
+  - {fileID: 114313778431440386}
+  - {fileID: 114165345202722128}
+  - {fileID: 114079727686767912}
+  _Show: 0
+  m_ShowDescriptors:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
+  m_ShowConditions:
+    m_Target: 1
+    speed: 2
+    m_Value: 1
+--- !u!114 &114079727686767912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef903e4e18724635966cd4de5427d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Name: "Chambre de Louis \xE0 gauche"
+  _NextPage: {fileID: 11400000, guid: 4e75e9419941e41a3a47d92ba221bebf, type: 2}
+  _Input: 276
+--- !u!114 &114165345202722128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef903e4e18724635966cd4de5427d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Name: "Salon Carole \xE0 droite"
+  _NextPage: {fileID: 11400000, guid: f355c033205284bdea3d32ada62ffa0a, type: 2}
+  _Input: 275
+--- !u!114 &114313778431440386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef903e4e18724635966cd4de5427d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Name: Bas Antoine
+  _NextPage: {fileID: 11400000, guid: 523ffa4df208942b29b552000d053600, type: 2}
+  _Input: 274
+--- !u!114 &114473974501317634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c758c60455df846c3b534fb919fce3ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Text: "Ahaha trop bien Check la vache ! On faisait \xE7a tout le temps quand on
+    \xE9tait petit. Tu aimais bien traire\u2026"
+  _TextColor: {r: 1, g: 1, b: 1, a: 1}

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519a2596fec834b5ea05ded6f9fd2dce, type: 3}
+  m_Name: Fil 6.2
+  m_EditorClassIdentifier: 
+  _Descriptors:
+  - {fileID: 114872408803807676}
+  _Conditions:
+  - {fileID: 114584742804880988}
+  _Show: 0
+  m_ShowDescriptors:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
+  m_ShowConditions:
+    m_Target: 1
+    speed: 2
+    m_Value: 1
+--- !u!114 &114584742804880988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef903e4e18724635966cd4de5427d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Name: "Fin sc\xE8ne cuisine"
+  _NextPage: {fileID: 11400000, guid: 8dfb075365fc1488daf3e8fb6dfc758d, type: 2}
+  _Input: 32
+--- !u!114 &114872408803807676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c758c60455df846c3b534fb919fce3ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Text: "Les mots ne me viennent pas. Je commence \xE0 b\xE9gayer mais je m\u2019arr\xEAte
+    aussit\xF4t pour finalement rester bouche b\xE9e. Viens \xE0 me l\u2019esprit
+    toutes les chamailleries avec lui lorsque nous \xE9tions enfants.\\n Antoine :
+    Allez Louis, va plus vite !\\n Louis : Oui oui ! C'est bon l\xE0...\\n Grognement
+    qui saute dessus Antoine\\n Antoine : c'est qui le plus fort maintenant ?!\\n
+    Louis : Arr\xEAte tu fais mal\\n Antoine a toujours eu un complexe d'inf\xE9riorit\xE9
+    avec moi. Il a besoin de se montrer comp\xE9titif afin de se valoriser et surtout
+    de se rassurer. "
+  _TextColor: {r: 1, g: 1, b: 1, a: 1}
