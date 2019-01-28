@@ -36,23 +36,6 @@ public class InputConditionData : IConditionData
     
     public override bool Validate()
     {
-        KeyCode newInput = _Input;
-        switch (newInput)
-        {
-            case KeyCode.UpArrow:
-            newInput = KeyCode.Z;
-            break;
-            case KeyCode.DownArrow:
-            newInput = KeyCode.D;
-            break;
-            case KeyCode.RightArrow:
-            newInput = KeyCode.S;
-            break;
-            case KeyCode.LeftArrow:
-            newInput = KeyCode.Q;
-            break;
-        }
-
-        return base.Validate() && Input.GetKeyDown(newInput);
+        return base.Validate() && Input.GetKeyDown(_Input);
     }
 }
