@@ -13,17 +13,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Descriptors:
   - {fileID: 114523237141767326}
-  _Conditions:
-  - {fileID: 114570746425139072}
+  _Links:
+  - {fileID: 114551979884249320}
   _Show: 0
   m_ShowDescriptors:
     m_Target: 0
     speed: 2
     m_Value: 0
-  m_ShowConditions:
-    m_Target: 1
+  m_ShowLinks:
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
 --- !u!114 &114523237141767326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,6 +40,25 @@ MonoBehaviour:
     par mon geste, ce dernier demeure sid\xE9r\xE9. Je n\u2019ai jamais connu une
     personne qui avait la main aussi froide... "
   _TextColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &114551979884249320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecc98c9677545464c9fe588ad281084b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Name: "Fin sc\xE8ne cuisine"
+  _NextPage: {fileID: 11400000, guid: 8dfb075365fc1488daf3e8fb6dfc758d, type: 2}
+  _Conditions:
+  - {fileID: 114570746425139072}
+  m_ShowConditions:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
 --- !u!114 &114570746425139072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51,6 +70,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef903e4e18724635966cd4de5427d4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Name: "Fin sc\xE8ne cuisine"
-  _NextPage: {fileID: 11400000, guid: 8dfb075365fc1488daf3e8fb6dfc758d, type: 2}
   _Input: 32

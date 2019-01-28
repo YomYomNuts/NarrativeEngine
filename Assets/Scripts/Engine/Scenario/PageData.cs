@@ -11,8 +11,10 @@ using UnityEngine.Events;
 
 public class PageData : ScriptableObject
 {
+    [HideInInspector]
     public List<IDescriptorData> _Descriptors = new List<IDescriptorData>();
-    public List<IConditionData> _Conditions = new List<IConditionData>();
+    [HideInInspector]
+    public List<LinkData> _Links = new List<LinkData>();
 
 
     public PageData()
@@ -20,7 +22,7 @@ public class PageData : ScriptableObject
 #if UNITY_EDITOR
         _Show = true;
         m_ShowDescriptors = new AnimBool(true);
-        m_ShowConditions = new AnimBool(false);
+        m_ShowLinks = new AnimBool(false);
 #endif
     }
 
@@ -31,9 +33,9 @@ public class PageData : ScriptableObject
         {
             descriptor.Read();
         }
-        foreach (IConditionData condition in _Conditions)
+        foreach (LinkData link in _Links)
         {
-            condition.Initialize();
+            link.Initialize();
         }
     }
 
@@ -47,9 +49,9 @@ public class PageData : ScriptableObject
 
     public void Update()
     {
-        foreach (IConditionData condition in _Conditions)
+        foreach (LinkData link in _Links)
         {
-            if (condition.Check())
+            if (link.Check())
                 break;
         }
     }
@@ -69,7 +71,7 @@ public class PageData : ScriptableObject
     [HideInInspector]
     public AnimBool m_ShowDescriptors;
     [HideInInspector]
-    public AnimBool m_ShowConditions;
+    public AnimBool m_ShowLinks;
 #endif
 }
 
@@ -80,19 +82,20 @@ class PageDataEditor : Editor
 {
     PageData m_pageData;
     List<string> _ListTypeDescriptors;
-    List<string> _ListTypeConditions;
+    List<string> _ListTypeLinks;
 
     void OnEnable()
     {
         m_pageData = target as PageData;
         m_pageData.m_ShowDescriptors.valueChanged.AddListener(new UnityAction(base.Repaint));
         _ListTypeDescriptors = ReflectiveEnumerator.GetEnumerableOfType<IDescriptorData>();
-        m_pageData.m_ShowConditions.valueChanged.AddListener(new UnityAction(base.Repaint));
-        _ListTypeConditions = ReflectiveEnumerator.GetEnumerableOfType<IConditionData>();
+        m_pageData.m_ShowLinks.valueChanged.AddListener(new UnityAction(base.Repaint));
     }
 
     public override void OnInspectorGUI()
     {
+        base.OnInspectorGUI();
+
         // Name
         string prevName = m_pageData.name;
         m_pageData.name = EditorGUILayout.TextField("Name", prevName);
@@ -147,18 +150,18 @@ class PageDataEditor : Editor
         }
         #endregion Descriptors
 
-        #region Conditions
-        m_pageData.m_ShowConditions.target = EditorGUILayout.ToggleLeft("Conditions", m_pageData.m_ShowConditions.target);
-        using (var group = new EditorGUILayout.FadeGroupScope(m_pageData.m_ShowConditions.faded))
+        #region Links
+        m_pageData.m_ShowLinks.target = EditorGUILayout.ToggleLeft("Links", m_pageData.m_ShowLinks.target);
+        using (var group = new EditorGUILayout.FadeGroupScope(m_pageData.m_ShowLinks.faded))
         {
             if (group.visible)
             {
                 ++EditorGUI.indentLevel;
-                for (int i = 0; i < m_pageData._Conditions.Count; ++i)
+                for (int i = 0; i < m_pageData._Links.Count; ++i)
                 {
-                    IConditionData condition = m_pageData._Conditions[i];
+                    LinkData link = m_pageData._Links[i];
                     {
-                        Editor _editor = Editor.CreateEditor(condition);
+                        Editor _editor = Editor.CreateEditor(link);
                         _editor.OnInspectorGUI();
                     }
 
@@ -166,8 +169,8 @@ class PageDataEditor : Editor
                     GUI.backgroundColor = Color.red;
                     if (GUILayout.Button("Remove"))
                     {
-                        DestroyImmediate(condition, true);
-                        m_pageData._Conditions.Remove(condition);
+                        DestroyImmediate(link, true);
+                        m_pageData._Links.Remove(link);
                         --i;
                         AssetDatabase.ImportAsset(AssetDatabase.GetAssetPath(m_pageData));
                     }
@@ -175,23 +178,22 @@ class PageDataEditor : Editor
                     EditorGUILayout.Space();
                 }
                 
-                foreach (string type in _ListTypeConditions)
+                if (GUILayout.Button("Add Link"))
                 {
-                    if (GUILayout.Button("Add " + type))
-                    {
-                        string currentPath = AssetDatabase.GetAssetPath(m_pageData);
-                        IConditionData newAsset = ScriptableObject.CreateInstance(type) as IConditionData;
-                        AssetDatabase.AddObjectToAsset(newAsset, currentPath);
-                        m_pageData._Conditions.Add(newAsset);
-                        AssetDatabase.ImportAsset(AssetDatabase.GetAssetPath(newAsset));
-                        EditorUtility.SetDirty(m_pageData);
-                    }
+                    string currentPath = AssetDatabase.GetAssetPath(m_pageData);
+                    LinkData newAsset = ScriptableObject.CreateInstance<LinkData>();
+                    AssetDatabase.AddObjectToAsset(newAsset, currentPath);
+                    m_pageData._Links.Add(newAsset);
+                    AssetDatabase.ImportAsset(AssetDatabase.GetAssetPath(newAsset));
+                    EditorUtility.SetDirty(m_pageData);
                 }
                 --EditorGUI.indentLevel;
                 EditorGUILayout.Space();
             }
         }
-        #endregion Descriptors
+        #endregion Links
+
+        serializedObject.ApplyModifiedProperties();
     }
 }
 #endif

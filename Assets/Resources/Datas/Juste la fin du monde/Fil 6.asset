@@ -14,15 +14,15 @@ MonoBehaviour:
   _Descriptors:
   - {fileID: 114186367449482152}
   - {fileID: 114969557425096746}
-  _Conditions:
-  - {fileID: 114349365625993540}
-  - {fileID: 114234068963693736}
+  _Links:
+  - {fileID: 114471122037537360}
+  - {fileID: 114553592946241650}
   _Show: 0
   m_ShowDescriptors:
     m_Target: 1
     speed: 2
     m_Value: 1
-  m_ShowConditions:
+  m_ShowLinks:
     m_Target: 0
     speed: 2
     m_Value: 0
@@ -50,8 +50,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef903e4e18724635966cd4de5427d4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Name: "R\xE9pondre \xE0 Antoine"
-  _NextPage: {fileID: 11400000, guid: 29a95dab7f19e48019e8fe91642de27d, type: 2}
   _Input: 275
 --- !u!114 &114349365625993540
 MonoBehaviour:
@@ -64,9 +62,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef903e4e18724635966cd4de5427d4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Input: 276
+--- !u!114 &114471122037537360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecc98c9677545464c9fe588ad281084b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _Name: Prendre la main d'Antoine
   _NextPage: {fileID: 11400000, guid: 4f3da3965a0c2464698865314b933a4d, type: 2}
-  _Input: 276
+  _Conditions:
+  - {fileID: 114349365625993540}
+  m_ShowConditions:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
+--- !u!114 &114553592946241650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecc98c9677545464c9fe588ad281084b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Name: "R\xE9pondre \xE0 Antoine"
+  _NextPage: {fileID: 11400000, guid: 29a95dab7f19e48019e8fe91642de27d, type: 2}
+  _Conditions:
+  - {fileID: 114234068963693736}
+  m_ShowConditions:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
 --- !u!114 &114969557425096746
 MonoBehaviour:
   m_ObjectHideFlags: 0

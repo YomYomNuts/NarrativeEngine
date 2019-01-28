@@ -8,21 +8,8 @@ using UnityEditor;
 
 public class IConditionData : ScriptableObject
 {
-    public string _Name;
-    public PageData _NextPage;
-
     #region Helpers
-    public bool Check()
-    {
-        if (_NextPage != null && Validate())
-        {
-            ReaderScenario.Instance.ChangePage(_NextPage);
-            return true;
-        }
-        return false;
-    }
-
-    public virtual void Initialize()
+    public virtual void Initialize(LinkData link)
     {
     }
 
@@ -32,19 +19,3 @@ public class IConditionData : ScriptableObject
     }
     #endregion Helpers
 }
-
-
-#if UNITY_EDITOR
-[CustomEditor(typeof(IConditionData))]
-class IConditionDataEditor : Editor
-{
-    void OnEnable()
-    {
-    }
-
-    public override void OnInspectorGUI()
-    {
-        base.OnInspectorGUI();
-    }
-}
-#endif

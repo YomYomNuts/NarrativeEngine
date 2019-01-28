@@ -10,25 +10,26 @@ public class InputConditionData : IConditionData
 {
     public KeyCode _Input;
 
-    public override void Initialize()
+    public override void Initialize(LinkData link)
     {
-        base.Initialize();
+        base.Initialize(link);
+
         switch (_Input)
         {
             case KeyCode.UpArrow:
-            ReaderScenario.Instance.SetUp(_Name);
+            ReaderScenario.Instance.SetUp(link._Name);
             break;
             case KeyCode.DownArrow:
-            ReaderScenario.Instance.SetDown(_Name);
+            ReaderScenario.Instance.SetDown(link._Name);
             break;
             case KeyCode.RightArrow:
-            ReaderScenario.Instance.SetRight(_Name);
+            ReaderScenario.Instance.SetRight(link._Name);
             break;
             case KeyCode.LeftArrow:
-            ReaderScenario.Instance.SetLeft(_Name);
+            ReaderScenario.Instance.SetLeft(link._Name);
             break;
             case KeyCode.Space:
-            ReaderScenario.Instance.SetButton(_Name);
+            ReaderScenario.Instance.SetButton(link._Name);
             break;
         }
     }

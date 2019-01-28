@@ -12,9 +12,9 @@ public class TimeConditionData : IConditionData
     [HideInInspector]
     public float _Time;
     
-    public override void Initialize()
+    public override void Initialize(LinkData link)
     {
-        base.Initialize();
+        base.Initialize(link);
 
         _Time = Time.time;
     }

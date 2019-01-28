@@ -13,15 +13,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Descriptors:
   - {fileID: 114045992827573154}
-  _Conditions:
-  - {fileID: 114756606987350708}
-  - {fileID: 114499979442363428}
+  _Links:
+  - {fileID: 114119966712380440}
+  - {fileID: 114058556229262586}
   _Show: 0
   m_ShowDescriptors:
     m_Target: 0
     speed: 2
     m_Value: 0
-  m_ShowConditions:
+  m_ShowLinks:
     m_Target: 0
     speed: 2
     m_Value: 0
@@ -41,6 +41,44 @@ MonoBehaviour:
     rien ne m'appartient mis \xE0 part les traces du temps pass\xE9 de mes posters
     sur les murs. Je fais l'inventaire des objets plus ou moins familiers."
   _TextColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &114058556229262586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecc98c9677545464c9fe588ad281084b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Name: Ouvrir la boite de droite
+  _NextPage: {fileID: 11400000, guid: cee41f78e71ac4a4fa9a065ec3333d7f, type: 2}
+  _Conditions:
+  - {fileID: 114499979442363428}
+  m_ShowConditions:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
+--- !u!114 &114119966712380440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecc98c9677545464c9fe588ad281084b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Name: Ouvrir la boite de gauche
+  _NextPage: {fileID: 11400000, guid: 094de217fff5e45feb48baf459620c0b, type: 2}
+  _Conditions:
+  - {fileID: 114756606987350708}
+  m_ShowConditions:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
 --- !u!114 &114499979442363428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52,8 +90,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef903e4e18724635966cd4de5427d4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Name: Ouvrir la boite de droite
-  _NextPage: {fileID: 11400000, guid: cee41f78e71ac4a4fa9a065ec3333d7f, type: 2}
   _Input: 275
 --- !u!114 &114756606987350708
 MonoBehaviour:
@@ -66,6 +102,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef903e4e18724635966cd4de5427d4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Name: Ouvrir la boite de gauche
-  _NextPage: {fileID: 11400000, guid: 094de217fff5e45feb48baf459620c0b, type: 2}
   _Input: 276

@@ -13,17 +13,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Descriptors:
   - {fileID: 114132787817375952}
-  _Conditions:
-  - {fileID: 114810050935146698}
+  _Links:
+  - {fileID: 114317594932768600}
   _Show: 0
   m_ShowDescriptors:
     m_Target: 0
     speed: 2
     m_Value: 0
-  m_ShowConditions:
-    m_Target: 1
+  m_ShowLinks:
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
 --- !u!114 &114132787817375952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,6 +38,25 @@ MonoBehaviour:
   _Text: "- Ok tr\xE8s bien. Maintenant serre \xE7a tr\xE8s fort, ne l\xE2che pas
     le temps que je d\xE9bloque ce truc... "
   _TextColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &114317594932768600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecc98c9677545464c9fe588ad281084b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Name: Bouton
+  _NextPage: {fileID: 11400000, guid: c3152ba37f72f454bb624a04bc47c121, type: 2}
+  _Conditions:
+  - {fileID: 114810050935146698}
+  m_ShowConditions:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
 --- !u!114 &114810050935146698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,6 +68,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef903e4e18724635966cd4de5427d4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Name: Bouton
-  _NextPage: {fileID: 11400000, guid: c3152ba37f72f454bb624a04bc47c121, type: 2}
   _Input: 32

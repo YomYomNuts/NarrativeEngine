@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Name: Fil 11.1.3
   m_EditorClassIdentifier: 
   _Descriptors: []
-  _Conditions:
-  - {fileID: 114774009322624436}
-  - {fileID: 114546561621574926}
+  _Links:
+  - {fileID: 114581713192846724}
+  - {fileID: 114656304241532260}
   _Show: 0
   m_ShowDescriptors:
     m_Target: 0
     speed: 2
     m_Value: 0
-  m_ShowConditions:
-    m_Target: 1
+  m_ShowLinks:
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
 --- !u!114 &114546561621574926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,10 +35,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a66f4a65d21a429fba5211bc8be02d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Name: 
-  _NextPage: {fileID: 11400000, guid: 42f5bacc29b5543789bc7cde740a189f, type: 2}
   _Duration: 3
   _Time: 0
+--- !u!114 &114581713192846724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecc98c9677545464c9fe588ad281084b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Name: Bas
+  _NextPage: {fileID: 11400000, guid: 42b0414f3f1ee444cb52bc96fd8320b5, type: 2}
+  _Conditions:
+  - {fileID: 114774009322624436}
+  m_ShowConditions:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
+--- !u!114 &114656304241532260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecc98c9677545464c9fe588ad281084b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Name: 
+  _NextPage: {fileID: 11400000, guid: 42f5bacc29b5543789bc7cde740a189f, type: 2}
+  _Conditions:
+  - {fileID: 114546561621574926}
+  m_ShowConditions:
+    m_Target: 0
+    speed: 2
+    m_Value: 0
 --- !u!114 &114774009322624436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50,6 +86,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef903e4e18724635966cd4de5427d4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Name: Bas
-  _NextPage: {fileID: 11400000, guid: 42b0414f3f1ee444cb52bc96fd8320b5, type: 2}
   _Input: 274
